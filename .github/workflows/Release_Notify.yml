@@ -27,5 +27,5 @@ jobs:
           app-id: '${{ secrets.REDDIT_APP_ID }}'
           app-secret: '${{ secrets.REDDIT_APP_SECRET }}'
           subreddit: test
-          title: "{{ EVENT_PAYLOAD.release.name }}"
-          url: "https://alt-f4.blog/{{ EVENT_PAYLOAD.release.tag_name }}"
+          title: "${{ EVENT_PAYLOAD.release.name }}"
+          url: "https://alt-f4.blog/${{ EVENT_PAYLOAD.release.tag_name }}"
